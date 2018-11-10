@@ -14,13 +14,225 @@
     <!-- Scroll to Top button -->
     <a id="scrolltoTop">Top</a>
 
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, eligendi maxime atque maiores quasi nesciunt ab reprehenderit,
-    molestiae dicta dolorum doloremque laboriosam suscipit tempora facere perferendis adipisci ullam nam pariatur, esse expedita
-    vitae. Maxime debitis harum quisquam modi sit ipsam nulla dignissimos voluptate repellendus veniam ipsa nemo amet doloribus
-    corrupti a sint deleniti pariatur exercitationem adipisci tempora ullam, sapiente voluptatum odio beatae? Excepturi aut
-    accusamus aliquid deserunt ullam repudiandae nesciunt qui autem dolore esse, quaerat itaque nam, magni possimus placeat
-    dignissimos quis ea quibusdam. Voluptatibus accusantium suscipit dicta dolor vel, soluta nisi magni consequatur ea blanditiis
-    maiores architecto doloribus repellat.
+    <header>
+        <!-- SECTION : Reservation Modal
+        ============================================ -->
+        <div class="modal fade" id="onlineModal" tabindex="-1" role="dialog" aria-labelledby="onlineModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="onlineModalLabel">Reservation</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <p class="h4 text-center mb-4">Pre-entry here...</p>
+
+                            <div class="form-row">
+                                <div class="col-lg-6">
+                                    <div class="md-form">
+                                        <input type="text" id="materialFormContactNameEx" class="form-control" placeholder="Your name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="md-form">
+                                        <input type="email" id="materialFormContactEmailEx" class="form-control" placeholder="Your email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="md-form">
+                                        <input type="tel" id="materialFormContactTelEx" class="form-control" placeholder="Your phone">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="md-form">
+                                        <input type="text" id="materialFormContactDateEx" class="form-control" placeholder="Select Date">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="md-form">
+                                        <input type="text" id="materialFormContactSubjectEx" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="md-form">
+                                        <textarea type="text" id="materialFormContactMessageEx" class="form-control" rows="2" placeholder="Your message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <button class="btn btn-outline-danger" type="submit">Send
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Additional Contact -->
+                        <div class="text-center my-4">
+                            <div class="title-bar w-50 mx-auto my-0">
+                                <h4>OR</h4>
+                            </div>
+                            <p>If you feel comfortable calling a phone, please telephone 02-111-1111~ </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /SECTION : Reservation Modal -->
+
+        <!-- SECTION NAVBAR
+        ============================================ -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top mt-5">
+            <div id="nav-container" class="container rgba-white-strong shadow-lg p-3">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/logo.png" class="d-inline-block align-top" alt="" width="250px">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div id="nav-calling" class="ml-auto mt-3 border-bottom">
+                        <h4 class="text-info text-md-right">Questions OR Counseling?</h4>
+                        <p class="text-md-right text-danger lead">TEL 02-111-1111</p>
+                    </div>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Intro
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="page.html">Doctor's greeting</a>
+                                <a class="dropdown-item" href="page.html">Clinic Info</a>
+                                <a class="dropdown-item" href="page.html">Clinic Photos</a>
+                                <a class="dropdown-item" href="page.html">Notice</a>
+                                <a class="dropdown-item" href="page.html">Counseling</a>
+                                <a class="dropdown-item" href="page.html">Map</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Clinics
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="page.html">Yak-chim</a>
+                                <a class="dropdown-item" href="page.html">Rhinitis</a>
+                                <a class="dropdown-item" href="page.html">Growth</a>
+                                <a class="dropdown-item" href="page.html">Diet</a>
+                                <a class="dropdown-item" href="page.html">Herbs</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#onlineModal">Reservation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- /SECTION NAVBAR -->
+
+        <!-- SECTION JUMBOTRON
+        ============================================ -->
+        <section id="top-banner" class="jumbotron jumbotron-fluid" style="background-image: url(./images/top-banner.jpg);">
+            <div class="section-content">
+                <div class="container text-white pt-5">
+                    <h1 class="display-4">Page Title</h1>
+                    <br>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
+                        content or information.</p>
+                </div>
+            </div>
+        </section id="top-banner">
+        <!-- /SECTION JUMBOTRON -->
+    </header>
+
+    <!-- SECTION MAIN
+    ============================================ -->
+    <main class="main main-raised-square">
+        <div class="section-content">
+            <div class="container">
+                <div class="row">
+                    <aside class="col-md-4 order-last order-md-first mb-4">
+                        <ul class="list-group">
+                            <li class="list-group-item bg-warning text-white">
+                                <strong>Upper Menu</strong>
+                            </li>
+                            <li class="list-group-item list-group-item-action">
+                                <a href="page.html" class="text-muted">Submenu 1</a>
+                            </li>
+                            <li class="list-group-item list-group-item-action">
+                                <a href="page.html" class="text-muted">Submenu 2</a>
+                            </li>
+                            <li class="list-group-item list-group-item-action">
+                                <a href="page.html" class="text-muted">Submenu 3</a>
+                            </li>
+                            <li class="list-group-item list-group-item-action">
+                                <a href="page.html" class="text-muted">Submenu 4</a>
+                            </li>
+                            <li class="list-group-item list-group-item-action">
+                                <a href="page.html" class="text-muted">Submenu 5</a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <!-- / aside -->
+                    <article class="col-md-8 order-first order-md-last mb-4">
+                        <h3>Hello, I'm Dr.Goh.
+                            <br>
+                            <small>Nice to meet you!</small>
+                        </h3>
+                        <br>
+                        <img src="./images/profile.jpg" alt="" class="profile-img img-fluid rounded-circle shadow-lg float-lg-left mr-lg-4 d-block mx-auto"
+                            width="35%">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum id in eum error, enim beatae molestias
+                            sequi labore voluptatem exercitationem rerum perspiciatis nam tempore quos
+                            <span class="text-danger">
+                                <b>dignissimos qui provident</b>
+                            </span>
+                            aut culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, porro vel! Ad, quod iste aspernatur vel sunt magni
+                            incidunt ipsa necessitatibus et autem officiis. Dolore non quas quisquam voluptas dolor.</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum neque consequuntur est rem commodi,
+                            omnis voluptatem non deleniti dicta placeat voluptate, velit tenetur error. Quod tempora cum
+                            reiciendis a consequuntur, possimus delectus adipisci maiores error aliquam voluptatum. Ipsa,
+                            veritatis doloremque.</p>
+
+                        <img src="./images/img1.jpg" alt="" class="img-fluid shadow-lg">
+                        <br>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam alias iste sapiente cumque. Ipsa
+                            velit error maxime esse nisi facilis nesciunt at, perspiciatis dolorem eos, dicta rerum consectetur
+                            dolorum eligendi quas odit nihil cumque aspernatur dolores. Aliquid doloremque, error dolor delectus
+                            necessitatibus nobis impedit autem vel asperiores harum at in.</p>
+                        <ul>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea.</li>
+                        </ul>
+                        <div class="alert alert-success" role="alert">
+                            <h4 class="alert-heading">Special Notice</h4>
+                            <p>Aww yeah, you successfully read this important alert message. This example text is going to run
+                                a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                            <hr>
+                            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                        </div>
+                    </article>
+                    <!-- / article -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- /SECTION MAIN -->
 
     <!-- SECTION ETC
     ============================================ -->
